@@ -1,0 +1,116 @@
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__logo{
+        font-family: $secondary-font;
+        font-size: 26px;
+        font-weight: 700;
+        color: $primary-color;
+        text-decoration: none;
+    }
+
+    &__info{
+        font-size: 14px;
+        line-height: 24px;
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    &__subtitle{
+        display: flex;  
+        align-items: center;
+        padding: 0;
+        font-family: $main-font;
+        font-style: normal;
+        font-size: 14x;
+        font-weight: 500;
+        text-decoration: none;
+        color: $secondary-color;
+        margin-left: 40px;
+        &,li{
+            background-color:rgba(255, 255, 255, 0.1);
+            width: 44px;
+            height: 44px;
+            margin: 4px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:hover{
+            background-color:$primary-color; 
+        }
+    }
+
+    &__iconsocialmedia{
+        width: 20px;
+        height: 20px;
+        fill: $secondary-color;
+        cursor: pointer;
+    }
+}
+
+.footer-suscribe{
+    width: 570px;
+    height: 86px;
+    margin: 40px;
+
+    &__input{
+        width: 358px;
+        height: 50px;
+        border-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(33, 150, 243, 0);
+        padding-left: 15px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    &__label{
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__mail{
+        display: flex;
+        margin-top: 16px;
+    }
+
+    &__button{
+        position: relative;
+        margin-left: 15px; 
+    }
+
+    &__input-buttom{
+        width: 200px;
+        height: 50px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        position: absolute;
+        text-align: left;
+        padding-left: 40px;
+        &:hover{
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+    }
+
+    &__iconsuscribe{
+        fill: $secondary-color;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 15px;
+        left: 140px;
+    }
+}

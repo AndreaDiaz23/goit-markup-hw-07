@@ -1,2 +1,2 @@
-# goit-markup-hw-07
- La tarea de la casa #7
+# goit-markup-hw-06
+ La tarea de la casa #6

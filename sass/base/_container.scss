@@ -1,0 +1,20 @@
+/* section-container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor {
+    background-image: url(../images/Imagen.jpg);
+    margin: 0 auto;
+}
+
+.contenedor-pie {
+    background-color: $color-dark;
+    width: 1600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}

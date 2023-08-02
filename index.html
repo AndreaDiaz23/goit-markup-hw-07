@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <title>La tarea de casa #7</title> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li><a href="/header-nav" class="header-nav__logo">WebStudio</a></li>
+                    <li class="header-nav__item"> <a href="./index.html"> Estudio</a></li>
+                    <li class="header-nav__item"> <a href="./portafolio.html"> Portafolio</a></li>
+                    <li class="header-nav__item"> <a href="/Contactos">Contactos</a></li>
+                </ul>
+                <ul class="header-nav__contact">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="header-nav__link">
+                            <svg class="header-nav__icon-sobre">
+                                <use xlink:href="./images/icons.svg#icon-sobre"></use></svg>
+                            info@devstudio.com 
+                        </a>    
+                    </li>
+                    <li>    
+                        <a href="tel:+525555296000" class="header-nav__link"> 
+                            <svg class="header-nav__icon-cel">
+                                <use xlink:href="./images/icons.svg#icon-cel"></use></svg>
+                            +52 55 5529 6000 </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenedor">
+            <div class="container main-principal">
+                <h1 class="main-principal__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+                <button type="button" class="main-principal__button">
+                    Solicite nuestro servicio</button>
+            </div>                
+        </section>
+
+        <section class="modal">
+                <div class="modal__container">
+                    <form name="solicite nuestro servicio" class="modal__form">
+                        <p class="modal__title">Deje sus datos, nos contactaremos con usted</p>
+                        <label class="modal__label" for="input-name"> Nombre 
+                            <input class="modal__input" type="text" name="nombre" id="input-name">
+                            <svg class="modal__icon"> <use xlink:href="./images/icons.svg#namemodal"></use></svg>
+                        </label>
+
+                        <label class="modal__label" for="input-tel">Teléfono
+                            <input class="modal__input" type="tel" name="telefono" id="input-tel"> 
+                            <svg class="modal__icon"> <use xlink:href="./images/icons.svg#phonemodal"></use></svg>
+                        </label>
+
+                        <label class="modal__label" for="input-email">E-mail
+                            <input class="modal__input" type="email" name="email" id="input-email"> 
+                            <svg class="modal__icon"> <use xlink:href="./images/icons.svg#mailmodal"></use></svg>
+                        </label>
+ 
+                        <label for="comentarios"> Comentarios 
+                            <textarea 
+                                class="modal__textarea"
+                                placeholder="Introduzca el texto"
+                                name="comentarios" 
+                                id="comentarios" 
+                                cols="20" 
+                                rows="5"></textarea>
+                        </label>
+                        <div class="modal__checkbox">
+                            <input class="modal__checkboxinput" type="checkbox">
+                            <label class="modal__checkboxlabel"> Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones </label>
+                        </div>
+                        <div class="modal__buttonsend">
+                            <input class="buttonsendmodal" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                    <a href="#" class="modal__close">X</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <ul class="list-one">
+                    <li>
+                        <svg class="list-one__icon"><use xlink:href="./images/icons.svg#icon-antena"></use></svg>
+                        <h3 class="list-one__title"> ATENCIÓN A LOS DETALLES</h3>
+                        <p class="list-one__body">Nos adentramos en todos los detalles y procesos de su negocio, para así
+                            desarrollar una solución a su medida.</p>
+                    </li>
+                    <li>
+                        <svg class="list-one__icon"><use xlink:href="./images/icons.svg#icon-reloj"></use></svg>
+                        <h3 class="list-one__title">PUNTUALIDAD</h3>
+                        <p class="list-one__body">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
+                    </li>
+                    <li>
+                        <svg class="list-one__icon"><use xlink:href="./images/icons.svg#icon-diagrama"></use></svg>
+                        <h3 class="list-one__title">PLANIFICACIÓN</h3>
+                        <p class="list-one__body">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
+                    </li>
+                    <li>
+                        <svg class="list-one__icon"><use xlink:href="./images/icons.svg#icon-astronauta"></use></svg>
+                        <h3 class="list-one__title">TEGNOLOGÍA MODERNA</h3>
+                        <p class="list-one__body">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
+                    </li>            
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="list-two">A qué nos dedicamos</h2>
+                <ul class="list-two__child">
+                    <li class="list-two__image-one">
+                        <p class="list-two__title">APLICACIONES DE ESCRITORIO</p>
+                    </li>
+                    <li class="list-two__image-two">
+                        <p class="list-two__title">APLICACIONES MÓVILES</p>
+                    </li>
+                    <li class="list-two__image-three">
+                        <p class="list-two__title">SOLUCIONES DE DISEÑO</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card-team">
+            <div class="container">
+                <h2 class="card-team__title">Nuestro Equipo</h2>
+                <ul class="card-team__list">
+                    <li>
+                        <img src="./images/imagen4.jpg" width="270" height="260" alt="profe1" />
+                        <h3 class="card-team__name">Andrés Cubo</h3>
+                        <p class="card-team__job">Diseñador de Productos</p>
+                        <ul class="card-team__contact">
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-instagram"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-twitter"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-facebook"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-linkedin"></use></svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="./images/imagen5.jpg" width="270" height="260" alt="profe2" />
+                        <h3 class="card-team__name">Carla Palacios</h3>
+                        <p class="card-team__job">Desarrolladora Frontend</p>
+                        <ul class="card-team__contact">
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-instagram"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-twitter"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-facebook"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-linkedin"></use></svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="./images/imagen6.jpg" width="270" height="260" alt="profe2" />
+                        <h3 class="card-team__name">Mario Dorado</h3>
+                        <p class="card-team__job">Marketing</p>
+                        <ul class="card-team__contact">
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-instagram"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-twitter"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-facebook"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-linkedin"></use></svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="./images/imagen7.jpg" width="270" height="260" alt="profe2" />
+                        <h3 class="card-team__name">Pablo Mijangos</h3>
+                        <p class="card-team__job">Diseñador IU</p>
+                        <ul class="card-team__contact">
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-instagram"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-twitter"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-facebook"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="card-team__icon"> <use xlink:href="./images/icons.svg#icon-linkedin"></use></svg>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="list-three">
+            <div class="container">
+                <h2 class="list-three__title">Clientes Regulares</h2>
+                <div class="list-three__customer">
+                    <svg class="list-three__costumer1"><use xlink:href="./images/icons.svg#icon-grupologo1"></use></svg>
+                    <svg class="list-three__costumer2"><use xlink:href="./images/icons.svg#icon-grupologo2"></use></svg>
+                    <svg class="list-three__costumer3"><use xlink:href="./images/icons.svg#icon-grupologo3"></use></svg>
+                    <svg class="list-three__costumer4"><use xlink:href="./images/icons.svg#icon-grupologo4"></use></svg>
+                    <svg class="list-three__costumer5"><use xlink:href="./images/icons.svg#icon-grupologo5"></use></svg>
+                    <svg class="list-three__costumer6"><use xlink:href="./images/icons.svg#icon-grupologo6"></use></svg> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contenedor-pie">
+        <div class="container footer">
+            <div>
+                <ul>
+                    <li><a href="index.html" class="footer__logo">WebStudio</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li>
+                            <a class="footer__info" href="enlace google map" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de
+                                México, CDMX, México>
+                        </li>
+                        <li>
+                            <a class="footer__info" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                        </li>
+                        <li>
+                            <a class="footer__info" href="tel:+525555296000"> +52 55 5529 6000 </a>
+                        </il>
+                    </ul>
+                </address>
+            </div>
+            <div>
+                <p class="footer__subtitle">ENCUENTRENOS EN</p>
+                <ul class="footer__subtitle">
+                    <li>
+                        <svg class="footer__iconsocialmedia"> <use xlink:href="./images/icons.svg#icon-instagram"></use></svg>
+                    </li>
+                    <li>   
+                        <svg class="footer__iconsocialmedia"> <use xlink:href="./images/icons.svg#icon-twitter"></use></svg>
+                    </li> 
+                    <li>
+                        <svg class="footer__iconsocialmedia"> <use xlink:href="./images/icons.svg#icon-facebook"></use></svg>
+                    </li>
+                    <li>  
+                        <svg class="footer__iconsocialmedia"> <use xlink:href="./images/icons.svg#icon-linkedin"></use></svg>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <form name="footer-suscribe__input">
+                    <div class="footer-suscribe">
+                        <label class="footer-suscribe__label" for="email"> SUSCRÍBASE AL BOLETÍN INFORMATIVO </label>
+                        <div class="footer-suscribe__mail">
+                            <input class="footer-suscribe__input" type="email" placeholder="Correo electrónico">
+                            <div class="footer-suscribe__button">
+                                <input class="footer-suscribe__input-buttom" type="submit" value="Suscríbase">
+                                <svg class="footer-suscribe__iconsuscribe"> <use xlink:href="./images/icons.svg#iconsuscribete"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
