@@ -66,11 +66,6 @@
         }
     }
 
-    .modal__input:hover + .modal__icon, 
-    .modal__input:focus + .modal__icon{
-    fill: #2196F3;
-    }
-
     &__icon{
         width: 18px;
         height: 18px;
@@ -95,6 +90,9 @@
         &:focus{
             border: 1px solid rgba(33, 150, 243, 1);
             outline: none;
+        }
+        &::placeholder{
+            color:rgba(117, 117, 117, 1);
         }
     }
 
@@ -162,6 +160,12 @@
         transition:cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
+.modal__input:hover + .modal__icon, 
+.modal__input:focus + .modal__icon{
+fill: #2196F3;
+}
+
 .buttonsendmodal{
     background-color: #2196F3;
     color: white;
@@ -171,4 +175,10 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
+
+    &:hover{
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
 }
+

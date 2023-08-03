@@ -111,10 +111,6 @@ label {
 .modal__input:focus {
   border: 1px solid rgb(33, 150, 243);
 }
-.modal .modal__input:hover + .modal__icon,
-.modal .modal__input:focus + .modal__icon {
-  fill: #2196F3;
-}
 .modal__icon {
   width: 18px;
   height: 18px;
@@ -139,6 +135,12 @@ label {
 .modal__textarea:focus {
   border: 1px solid rgb(33, 150, 243);
   outline: none;
+}
+.modal__textarea::-moz-placeholder {
+  color: rgb(117, 117, 117);
+}
+.modal__textarea::placeholder {
+  color: rgb(117, 117, 117);
 }
 .modal__checkbox {
   display: flex;
@@ -198,6 +200,11 @@ label {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon {
+  fill: #2196F3;
+}
+
 .buttonsendmodal {
   background-color: #2196F3;
   color: white;
@@ -208,9 +215,25 @@ label {
   border: none;
   border-radius: 5px;
 }
+.buttonsendmodal:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
 
+/* section-header */
 .header-nav {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  margin-top: 25px;
   border-bottom: 1px solid rgb(236, 236, 236);
+}
+.header-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 50px;
 }
 .header-nav__list li {
   padding-bottom: 25px;
@@ -231,6 +254,9 @@ label {
   color: #212121;
   position: relative;
 }
+.header-nav__item:hover {
+  color: #2196F3;
+}
 .header-nav__item:hover::after {
   position: absolute;
   border: 2px solid #2196F3;
@@ -250,11 +276,29 @@ label {
   align-items: center;
   gap: 50px;
 }
-.header-nav__contact, .header-nav__contact li {
+.header-nav__contact li {
   padding-bottom: 25px;
 }
-.header-nav__contact:hover .header-nav__icon-sobre, .header-nav__contact a:hover .header-nav__icon-sobre, .header-nav__contact li:hover .header-nav__icon-sobre, .header-nav__contact li a:hover .header-nav__icon-sobre {
+.header-nav__contact li a:hover .header-nav__icon-sobre {
   fill: #2196F3;
+}
+.header-nav__contact li a:hover .header-nav__icon-cel {
+  fill: #2196F3;
+}
+.header-nav__link {
+  text-decoration: none;
+  color: #212121;
+}
+.header-nav__link:hover {
+  color: #2196F3;
+}
+.header-nav__icon-sobre {
+  width: 16px;
+  height: 12px;
+}
+.header-nav__icon-cel {
+  width: 10px;
+  height: 16px;
 }
 
 /* /section-main-principal */
@@ -296,8 +340,21 @@ label {
   padding: 0;
   margin-top: 60px;
 }
-.list-one, .list-one li {
+.list-one li {
   width: 270px;
+}
+.list-one li svg {
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  padding: 22px;
+  gap: 50px;
+  justify-content: center;
+}
+.list-one svg {
+  width: 70px;
+  height: 70px;
+  fill: #212121;
 }
 .list-one__title {
   font-size: 14px;
@@ -388,7 +445,7 @@ label {
   justify-content: space-between;
   padding: 0;
 }
-.card-team__list, .card-team__list li {
+.card-team__list li {
   background-color: #ffffff;
   width: 270px;
   height: 428px;
@@ -413,7 +470,7 @@ label {
   gap: 10px;
   cursor: pointer;
 }
-.card-team__contact, .card-team__contact li {
+.card-team__contact li {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -424,7 +481,7 @@ label {
   align-items: center;
   cursor: pointer;
 }
-.card-team__contact:hover, .card-team__contact li:hover {
+.card-team__contact li:hover {
   background-color: #2196F3;
 }
 .card-team__icon {
@@ -456,7 +513,7 @@ label {
   display: flex;
   justify-content: space-between;
 }
-.list-three__costumer, .list-three__costumer svg {
+.list-three__costumer svg {
   border: #AFB1B8 2px solid;
   width: 170px;
   height: 81px;
@@ -465,7 +522,7 @@ label {
   border-radius: 4px;
   justify-content: space-between;
 }
-.list-three__costumer:hover, .list-three__costumer svg:hover {
+.list-three__costumer svg:hover {
   fill: #2196F3;
   border: #2196F3 2px solid;
 }
@@ -557,8 +614,11 @@ label {
   cursor: pointer;
   align-items: center;
 }
-.card-service__child:hover, .card-service__child:hover .card-service__animation {
+.card-service__child:hover .card-service__animation {
   transform: translateY(0%);
+  box-shadow: none;
+}
+.card-service__child img:hover {
   box-shadow: none;
 }
 .card-service__image {
@@ -640,7 +700,7 @@ label {
   color: #ffffff;
   margin-left: 40px;
 }
-.footer__subtitle, .footer__subtitle li {
+.footer__subtitle li {
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;

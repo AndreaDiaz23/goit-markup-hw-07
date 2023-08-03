@@ -416,12 +416,12 @@ body {
 
 }
 
-.list-three__customer {
+.list-three__costomer {
     display: flex;
     justify-content: space-between;
 }
  
-.list-three__customer svg {
+.list-three__costomer svg {
     border: #AFB1B8 2px solid;
     width: 170px;
     height: 81px;

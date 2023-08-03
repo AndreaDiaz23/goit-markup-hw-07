@@ -42,8 +42,22 @@
     padding: 0;
     margin-top: 60px;
 
-    &,li{
+    li{
         width: 270px;
+        svg {
+            background-color: #F5F4FA;
+            width: 270px;
+            height: 120px;
+            padding: 22px;
+            gap: 50px;
+            justify-content: center;
+        }
+    }
+
+    svg {
+        width: 70px;
+        height: 70px;
+        fill: #212121;
     }
 
     &__title{
@@ -146,7 +160,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0;
-        &,li{
+        li{
             background-color: $secondary-color;
             width: 270px;
             height: 428px;
@@ -174,7 +188,7 @@
         display: flex;
         gap: 10px;
         cursor: pointer;
-        &,li{
+        li{
             width: 40px;
             height: 40px;
             text-align: center;
@@ -222,7 +236,7 @@
     &__costumer{
         display: flex;
         justify-content: space-between;
-        &,svg{
+        svg{
             border: $text-color-tertiary 2px solid;
             width: 170px;
             height: 81px;
@@ -340,9 +354,14 @@
         cursor: pointer;
         align-items: center;
         &:hover{
-            &,.card-service__animation{
+            .card-service__animation{
                 transform: translateY(00%);
                 box-shadow: none;    
+            }
+        }
+        img{
+            &:hover{
+                box-shadow: none;
             }
         }
     }
